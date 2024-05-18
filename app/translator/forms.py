@@ -21,3 +21,7 @@ class MultiFileField(forms.FileField):
 
 class FileFieldForm(forms.Form):
     file_field = MultiFileField()
+
+
+class TextForm(forms.Form):
+    name = forms.CharField(label="your name", max_length=255)

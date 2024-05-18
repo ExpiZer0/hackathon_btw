@@ -1,12 +1,12 @@
 from django.shortcuts import render
 from django.views.generic.edit import FormView
-from .forms import FileFieldForm
+from .forms import FileFieldForm, TextForm
 from django.http import HttpResponse
 from django.template import loader
 
 
 class FileFieldFormView(FormView):
-    form_class = FileFieldForm()
+    form_class = FileFieldForm
     template_name = "translator/index.html"
     success_url = ""
 
@@ -19,10 +19,7 @@ class FileFieldFormView(FormView):
 
 
 def index(request):
-    if request.method == "POST":
-        form = FileFieldForm(request.POST)
-    else:
-        form = FileFieldForm()
+    # TODO: if use form for files
     return render(
         request,
         "translator/index.html",
