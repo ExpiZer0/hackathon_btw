@@ -24,5 +24,5 @@ def index(request):
         request,
         "translator/index.html",
         {
-            "form": form
+
         })
