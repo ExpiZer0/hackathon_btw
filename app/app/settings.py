@@ -17,9 +17,6 @@ from pathlib import Path
 # BASE_DIR = Path(__file__).resolve().parent.parent
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
 PROJECT_DIR = os.path.join(BASE_DIR, 'app')
-# print(BASE_DIR)
-# print(PROJECT_DIR)
-# print(Path(__file__).resolve().parent.parent)
 
 
 # Quick-start development settings - unsuitable for production
@@ -60,8 +57,6 @@ ROOT_URLCONF = 'app.urls'
 
 DEFAULT_STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
 STATIC_ROOT = env.get('APP_STATIC_ROOT', DEFAULT_STATIC_ROOT)
-print(DEFAULT_STATIC_ROOT)
-print(STATIC_ROOT)
 
 
 # Static files (CSS, JavaScript, Images)
