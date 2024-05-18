@@ -19,6 +19,11 @@ $(document).ready(function(){
 
     }
   });
+
+    $(document).on('click', '.my_image', function () {
+        var detailImage = document.getElementById('detailImage');
+        detailImage.src = this.getAttribute('src');
+    })
   $(document).on('click','.close',function(){
     var indeX = $(this).parent().index();
     var filename = $(this).next('h4').text();
