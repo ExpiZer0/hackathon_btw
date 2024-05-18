@@ -1,5 +1,10 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <br>content
+    <br>
+    <form action="upload files" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Submit">
+    </form>
 {% endblock %}
