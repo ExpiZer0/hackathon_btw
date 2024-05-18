@@ -17,15 +17,20 @@
 </head>
 <body>
     <main>
-        hello world
+
         {% block content %}{% endblock %}
+
     </main>
 
     <footer>
 
     </footer>
 
-{% block js %}{% endblock %}
+    {% block js %}
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    {% endblock %}
 
 </body>
 </html>

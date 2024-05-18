@@ -2,9 +2,18 @@
 
 {% block content %}
     <br>
-    <form action="upload files" method="post">
-        {% csrf_token %}
-        {{ form }}
-        <input type="submit" value="Submit">
-    </form>
+<!--    <form action="upload files" method="post">-->
+<!--        {% csrf_token %}-->
+<!--        {{ form }}-->
+<!--        <input type="submit" value="Submit">-->
+<!--    </form>-->
+    <h2 class="text-center mt-5 mb-5">Image Upload</h2>
+    <div class="container">
+        <input type="file" name="files[]" style="width:500px;margin: 0 auto;" id="filess" accept="image/*" class="form-control" multiple>
+        <input type="submit" value="Submit" name="submit" class="btn mt-3 btn-primary d-block mx-auto">
+    </div>
+    <h2 class='mt-5 text-center'>Preview</h2>
+    <div class="preview mb-1">
+        <div class='image' id='previewContainer'></div>
+    </div>
 {% endblock %}

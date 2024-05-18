@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-bqnwinfo(2l32f4e=n==f=v6wpy9-2$acgd@9vc8d9k_j#p4zs
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -56,7 +56,7 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'app.urls'
 
 DEFAULT_STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
-STATIC_ROOT = env.get('APP_STATIC_ROOT', DEFAULT_STATIC_ROOT)
+STATIC_ROOT = '/static/'
 
 
 # Static files (CSS, JavaScript, Images)
@@ -64,9 +64,9 @@ STATIC_ROOT = env.get('APP_STATIC_ROOT', DEFAULT_STATIC_ROOT)
 
 STATIC_URL = 'static/'
 
-# STATICFILES_DIRS = [
-#     os.path.join(PROJECT_DIR, 'static'),
-# ]
+STATICFILES_DIRS = [
+    os.path.join(PROJECT_DIR, 'static'),
+]
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
