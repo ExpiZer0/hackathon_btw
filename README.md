@@ -21,6 +21,7 @@ pip install django
 ```
 py manage.py collectstatic
 ```
+# Примеры работы нейронной сети
 <p align="center">
   <img src="/samples/sample_0.jpg">
 </p>
