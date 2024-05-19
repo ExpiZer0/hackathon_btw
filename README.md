@@ -22,7 +22,7 @@ pip install django
 py manage.py collectstatic
 ```
 <p align="center">
-![](/samples/sample_0.jpg)  
+  <img src="/samples/sample_0.jpg">
 </p>
 Text: комаров  
 Probabilities: [0.91189545, 0.9836024, 0.7703604, 0.6825426, 0.60875124, 5.7843572e-05, 4.7298736e-06]  
