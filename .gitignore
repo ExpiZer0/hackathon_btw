@@ -165,3 +165,5 @@ ansible/start.sh
 src/app/settings/local.py
 src/app/settings/prod.py
 .python-version
+
+.vs/
