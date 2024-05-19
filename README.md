@@ -21,3 +21,4 @@ pip install django
 ```
 py manage.py collectstatic
 ```
+../samples/sample_0.jpg
