@@ -2,3 +2,5 @@ Django>=5.0.6
 tensorflow>=2.0.0
 pandas>=1.0.0
 numpy>=1.18.0
+cv2>=4.8.0
+pytesseract>=4.1.1
