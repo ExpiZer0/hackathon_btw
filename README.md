@@ -21,7 +21,9 @@ pip install django
 ```
 py manage.py collectstatic
 ```
+<p align="center">
 ![](/samples/sample_0.jpg)  
+</p>
 Text: комаров  
 Probabilities: [0.91189545, 0.9836024, 0.7703604, 0.6825426, 0.60875124, 5.7843572e-05, 4.7298736e-06]  
 ![](/samples/sample_1.jpg)  
@@ -39,4 +41,13 @@ Probabilities: [0.49016973, 0.0036454257, 0.22271529, 0.0010201358, 0.0008721117
 ![](/samples/sample_5.jpg)  
 Text: Принёт  
 Probabilities: [0.9643436, 0.9999302, 0.029173948, 2.3952887e-05, 9.756572e-06, 0.0011438447]  
-![](/samples/sample_.jpg)  
+![](/samples/sample_6.jpg)  
+![](/samples/sample_7.jpg)  
+![](/samples/sample_8.jpg)  
+![](/samples/sample_9.jpg)  
+![](/samples/sample_11.jpg)  
+![](/samples/sample_12.jpg)  
+![](/samples/sample_13.jpg)  
+![](/samples/sample_14.jpg)  
+![](/samples/sample_15.jpg)  
+
