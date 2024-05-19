@@ -5,6 +5,7 @@ from django.http import HttpResponse
 from django.template import loader
 
 
+
 class FileFieldFormView(FormView):
     form_class = FileFieldForm
     template_name = "translator/index.html"
@@ -16,6 +17,7 @@ class FileFieldFormView(FormView):
             # TODO: Do something with each file.
             ...
         return super().form_valid(form)
+
 
 
 def index(request):
